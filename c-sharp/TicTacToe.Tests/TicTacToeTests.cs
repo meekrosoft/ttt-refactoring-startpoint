@@ -1,7 +1,4 @@
-﻿using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicTacToe;
 
 namespace TicTacToe.Tests
@@ -38,7 +35,6 @@ namespace TicTacToe.Tests
             game.placeCross(1, 1);
             game.placeCircle(1, 2);
         }
-
 
         [TestMethod]
         [ExpectedException(typeof(TicTacException))]

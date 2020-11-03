@@ -1,13 +1,10 @@
-
-using System;
-
 namespace TicTacToe
 {
     public class TTTGame
     {
-        private int lstMv; 
+        private int lstMv;
 
-        private int[,] cells = new int[3,3];
+        private int[,] cells = new int[3, 3];
 
         public bool isOver()
         {
@@ -25,7 +22,7 @@ namespace TicTacToe
                 if (cells[0, i] == cells[1, i]
                     && cells[0, i] == cells[2, i]
                     && cells[0, i] != 0)
-                    return cells[0,i];
+                    return cells[0, i];
                 if (cells[i, 0] == cells[i, 1]
                     && cells[i, 0] == cells[i, 2]
                     && cells[i, 0] != 0)
@@ -79,7 +76,6 @@ namespace TicTacToe
 
         public void placeCross(int i, int i1)
         {
-     
             if (lstMv == 2) throw new TicTacException();
 
             if (cells[i, i1] != 0) throw new TicTacException();
